@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    import React from "react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Github, Linkedin } from "lucide-react";
+
+export default function Portfolio() {
+  return (
+    <div className="min-h-screen bg-gray-100 p-8">
+      <header className="text-center mb-12">
+        <h1 className="text-4xl font-bold">Vikas Dubey</h1>
+        <p className="text-lg text-gray-600">Fresher | Aspiring Web Developer</p>
+        <div className="mt-4 flex justify-center space-x-4">
+          <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+            <Button variant="outline"><Github className="mr-2" /> GitHub</Button>
+          </a>
+          <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">
+            <Button variant="outline"><Linkedin className="mr-2" /> LinkedIn</Button>
+          </a>
+        </div>
+      </header>
+
+      <section className="mb-12">
+        <h2 className="text-2xl font-semibold mb-4">About Me</h2>
+        <Card>
+          <CardContent className="p-4 text-gray-700">
+            <p>
+              Hello! I’m Vikas Dubey, a passionate fresher eager to kick-start my career in web development.
+              I have a strong interest in frontend technologies and love creating clean and user-friendly interfaces.
+            </p>
+          </CardContent>
+        </Card>
+      </section>
+
+      <section className="mb-12">
+        <h2 className="text-2xl font-semibold mb-4">Skills</h2>
+        <Card>
+          <CardContent className="p-4">
+            <ul className="list-disc list-inside space-y-2">
+              <li>HTML, CSS, JavaScript</li>
+              <li>React.js</li>
+              <li>Git & GitHub</li>
+              <li>Basic knowledge of Node.js and Express</li>
+            </ul>
+          </CardContent>
+        </Card>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-semibold mb-4">Projects</h2>
+        <Card>
+          <CardContent className="p-4 text-gray-700">
+            <p>
+              Coming soon! I'm currently working on some exciting personal projects to showcase my skills.
+            </p>
+          </CardContent>
+        </Card>
+      </section>
+    </div>
+  );
+}
+
+</body>
+</html>
