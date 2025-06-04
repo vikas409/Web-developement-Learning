@@ -1,0 +1,23 @@
+## React , Reactjs and react.js are same
+It is javascript library for bulding user interface(UI)
+
+We use react due to following reasons:
+ 1.Component based Approach
+ 2.uses a declative approach 
+ 3.dom update are handled gracefully :- means when some part get updated or changed whole webpage will not be refreshed. 
+Reuseable code
+Learn once write anywhere
+React is designed for speed , speed of implementing the application simplicity and scalability.
+
+
+  ######   Babel
+  Babel is a transpilar (A transpiler, also known as a source-to-source compiler, is a software tool 
+  that translates source code from one high-level programming language into another high-level language. 
+  Essentially, it converts code written in one language into an equivalent form in a different language,
+   often for compatibility or optimization purposes)
+ In context to Javascript, babel is a library which transpile JsX into pure Javascript.
+ And latest version of  javascript to older version of  javascript.
+ example
+ const name = <h1> vikas dubey</h1> // jsx element
+ Normal Javascript + html element = Jsx element
+ const name = 'vikas dubey' + <h1> vikas dubey </h1> = "const name = <h1> vikas Dubey </h1>
