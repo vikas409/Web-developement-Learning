@@ -21,3 +21,7 @@ React is designed for speed , speed of implementing the application simplicity a
  const name = <h1> vikas dubey</h1> // jsx element
  Normal Javascript + html element = Jsx element
  const name = 'vikas dubey' + <h1> vikas dubey </h1> = "const name = <h1> vikas Dubey </h1>
+
+ #  NPM and NPX
+ when we use NPM it create the package in your entire system while NPX create the package only in file where you are using
+   we use command "NPX create-react-app app name
