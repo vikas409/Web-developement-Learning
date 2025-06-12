@@ -25,4 +25,10 @@ React is designed for speed , speed of implementing the application simplicity a
  #  NPM and NPX
  when we use NPM it create the package in your entire system while NPX create the package only in file where you are using
    we use command "NPX create-react-app app name
+
+## Component
+Use use any component in main file, Lets take a example my main file is app.js and we have component card.jsx
+lets understand how can we use it
+import Card from "./card"
+
    
