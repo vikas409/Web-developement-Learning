@@ -2,10 +2,11 @@ import React from 'react'
 import Card from "./card"
 
 function App() {
+  let list = ["vikas", "ram", "Shyam"]
   return (
     <>
      <div>App</div>
-     <Card />
+     <Card myname="vikas" list={list}/>
     </>
     
   )

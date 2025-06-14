@@ -1,10 +1,18 @@
 import React from 'react'
 
-function card() {
+function card({myname,list}) {
+  //console.log(props);  
   return (
-    <div>
-      This is card
-    </div>
+    <>
+     This is card
+     <div>myname</div>
+     <ul>
+       {list.map(l => (
+         <li key={l}>{l} </li>
+
+        ))}
+     </ul>
+    </>
   )
 }
 
