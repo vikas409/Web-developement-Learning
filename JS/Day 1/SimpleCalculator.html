@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Calculator</title>
+</head>
+<body>
+  <h1>Simple Calculator</h1>
+  <input type="number" id="num1" placeholder="Enter first number" />
+  <input type="number" id="num2" placeholder="Enter second number" />
+  <br><br>
+  <button onclick="calculate()">Calculate</button>
+  <h3 id="output"></h3>
+
+  <script>
+    function calculate() {
+      let a = parseFloat(document.getElementById('num1').value);
+      let b = parseFloat(document.getElementById('num2').value);
+      
+      let sum = a + b;
+      let difference = a - b;
+
+      document.getElementById('output').innerText = 
+        `Sum: ${sum} | Difference: ${difference}`;
+    }
+  </script>
+</body>
+</html>
