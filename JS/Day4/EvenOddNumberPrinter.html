@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Multiplication Table</title>
+</head>
+<body>
+  <h1>Multiplication Table Generator</h1>
+  <input type="number" id="num" placeholder="Enter a number" />
+  <button onclick="printTable()">Show Table</button>
+
+  <pre id="output"></pre>
+
+  <script>
+    function printTable() {
+      let num = parseInt(document.getElementById("num").value);
+      let result = "";
+
+      for (let i = 1; i <= 10; i++) {
+        result += `${num} x ${i} = ${num * i}\n`;
+      }
+
+      document.getElementById("output").innerText = result;
+    }
+  </script>
+</body>
+</html>
