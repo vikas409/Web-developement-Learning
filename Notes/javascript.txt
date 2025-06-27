@@ -1,2 +1,110 @@
-### Event in js
+##Loop in js
+  "In JavaScript, a loop is used to execute a block of code repeatedly as long as a specified condition is true.
+   It helps reduce repetitive code and automate tasks like iterating over arrays, counting numbers, or 
+   processing user input."
+     
+     ##Types Of Loops
+       JavaScript has 4 main types of loops.
+        1.for loop – Most commonly used when we know how many times to run
+         for (let i = 0; i < 5; i++) {
+          console.log(i);
+         }
+          This loop is divided into 3 part 
+          1.Initialization (let i = 0)
+
+         2.Condition check (i < 5)
+
+         3. Increment (i++)
+         Har iteration ke baad condition check hoti hai, agar true hai to block run hota hai."
+          
+     2. While Loop :- This loop run till condition is true
+           let i = 0;
+           while (i < 5) {
+           console.log(i);
+           i++;
+           }
+        While Loop are use when we don't fix  iteration counts before execution
+    
+    3. do...while loop :- This loop at least once before checking the condition.
+       let i = 0;
+       do {
+       console.log(i);
+       i++;
+       } while (i < 5);
+    
+    4. for...of Loop – (Arrays, Strings, Iterables ke liye)
+       📌 Used to loop through:
+       Arrays
+       Strings
+       Sets
+      Maps
+     Anything that is iterable
+
+      let fruits = ["apple", "banana"];
+     for (let fruit of fruits) {
+     console.log(fruit);
+     }
+
+     ✅ Example with String:
+
+     for (let char of "Champ") {
+     console.log(char);
+     }
+
+     ✅ Example with Set:
+
+      let numSet = new Set([1, 2, 3]);
+
+      for (let n of numSet) {
+      console.log(n);
+     }
+
+
+
+     5️⃣ for...in – Objects ke keys loop karne ke liye
+      
+      Used to loop through:
+      Objects → keys (properties)
+
+      Arrays → indices (not recommended)   
+
+     let user = { name: "Champians", age: 22 };
+     for (let key in user) {
+     console.log(key + ": " + user[key]);
+     }
+
+      Example with Array (Not Ideal):
+
+      let fruits = ["Apple", "Banana", "Mango"];
+
+      for (let index in fruits) {
+      console.log(index, fruits[index]);
+      }
+
+      let arr = [10, 20, 30];
+      arr.test = "hello";
+
+     for (let i in arr) {
+      console.log(i);  // 0, 1, 2, test ✅
+     }
+
+     for (let i of arr) {
+     console.log(i);  // 10, 20, 30 ❌ (no "test")
+     }
+📌 Reason:
+
+for...in also loops over custom properties (non-numeric)
+
+for...of ignores them and focuses only on array values
+
+
+
+##How function works in js
+
+
+
+
+
+
+    
   
