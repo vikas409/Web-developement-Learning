@@ -100,6 +100,90 @@ for...of ignores them and focuses only on array values
 
 
 ##How function works in js
+ 1. How Function Works Behind the Scenes
+ JavaScript engine follows 2 steps:
+ 🔹 Step 1: Memory Creation Phase (Hoisting)
+ JS scans the code before execution
+
+ It stores function declarations in memory (hoisted!)
+
+ So you can call a function even before it is defined
+
+
+ sayHi();  // ✅ Works
+
+ function sayHi() {
+  console.log("Hi!");
+ }
+
+ ✅ This works because sayHi is hoisted.
+
+ 🔹 Step 2: Execution Phase
+ When function is called, JS:
+
+ Creates a new execution context
+
+ Allocates memory for parameters and local variables
+
+ Runs the function line-by-line
+
+ After completion, removes the function’s execution context from memory
+
+ 🎯 Think of it like:
+
+ Function call ➜ Apna ek chhota world banata hai ➜ Kaam karta hai ➜ Clean ho jaata hai
+  ## Execution Context (Deep Inside)
+   Every time a function is called, JS creates a new Execution Context.
+
+This includes:
+
+Variable Environment (local variables, arguments)
+
+Scope Chain (outer functions access)
+
+this binding (for object method calls)
+
+🔁 Call Stack:
+Every time you call a function, it’s added to the Call Stack.
+
+function one() {
+  two();
+}
+function two() {
+  console.log("Hello");
+}
+
+one();
+one() pushed to stack
+inside it, two() is called → pushed
+two() logs → removed
+one() done → removed
+
+Closures (Advanced Behavior)
+When a function remembers the variables from where it was created, even after that outer function has finished:
+function outer() {
+  let count = 0;
+
+  return function inner() {
+    count++;
+    console.log(count);
+  };
+}
+
+const counter = outer();  // counter is now inner()
+counter();  // 1
+counter();  // 2
+✅ Yeh hota hai closure — very powerful in real-world apps like React, timers, etc.
+
+
+  ##Real Use Cases of Functions in Web Development:
+Use	Example
+🔘 Button click	onClick = handleClick()
+📝 Form validation	validateForm()
+🌐 API call	fetchData()
+🔄 Looping logic	processItem(item)
+🔗 Navigation	goToPage("about")
+
 
 
 
